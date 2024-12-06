@@ -2,6 +2,7 @@
   id: AirSensorBase
   abstract: true
   components:
+<<<<<<< HEAD
   - type: DeviceNetwork
     deviceNetId: AtmosDevices
     receiveFrequencyId: AtmosMonitor
@@ -34,6 +35,37 @@
     guides:
     - DeviceMonitoringAndControl
     - AtmosphericsSystems
+=======
+    - type: DeviceNetwork
+      deviceNetId: AtmosDevices
+      receiveFrequencyId: AtmosMonitor
+      transmitFrequencyId: AtmosMonitor
+      prefix: device-address-prefix-sensor
+      sendBroadcastAttemptEvent: true
+      examinableAddress: true
+    - type: WiredNetworkConnection
+    - type: DeviceNetworkRequiresPower
+    - type: AtmosDevice
+    - type: AtmosMonitor
+      temperatureThresholdId: stationTemperature
+      pressureThresholdId: stationPressure
+      gasThresholdPrototypes:
+        Oxygen: stationOxygen
+        Nitrogen: ignore
+        CarbonDioxide: stationCO2
+        Plasma: stationPlasma
+        Tritium: stationTritium
+        WaterVapor: stationWaterVapor
+        Ammonia: stationAmmonia
+        NitrousOxide: stationNO
+        Frezon: danger
+        BZ: danger 
+        Healium: stationNO 
+        Nitrium: danger 
+    - type: Tag
+      tags:
+        - AirSensor
+>>>>>>> 144551ba8f (add some /tg/ gases to goob)
 
 - type: entity
   id: AirSensor

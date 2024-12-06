@@ -31,6 +31,25 @@ public sealed partial class AtmosAlarmEntryContainer : BoxContainer
         [AtmosAlarmType.Danger] = "atmos-alerts-window-danger-state",
     };
 
+<<<<<<< HEAD
+=======
+    private Dictionary<Gas, string> _gasShorthands = new Dictionary<Gas, string>()
+    {
+        [Gas.Ammonia] = "NH₃",
+        [Gas.CarbonDioxide] = "CO₂",
+        [Gas.Frezon] = "F",
+        [Gas.Nitrogen] = "N₂",
+        [Gas.NitrousOxide] = "N₂O",
+        [Gas.Oxygen] = "O₂",
+        [Gas.Plasma] = "P",
+        [Gas.Tritium] = "T",
+        [Gas.WaterVapor] = "H₂O",
+        [Gas.BZ] = "BZ",
+        [Gas.Healium] = "F₃BZ",
+        [Gas.Nitrium] = "Nitrium",
+    };
+
+>>>>>>> 144551ba8f (add some /tg/ gases to goob)
     public AtmosAlarmEntryContainer(NetEntity uid, EntityCoordinates? coordinates)
     {
         RobustXamlLoader.Load(this);

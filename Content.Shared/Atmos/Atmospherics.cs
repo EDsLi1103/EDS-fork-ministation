@@ -203,7 +203,11 @@ namespace Content.Shared.Atmos
         /// <summary>
         ///     Total number of gases. Increase this if you want to add more!
         /// </summary>
+<<<<<<< HEAD
         public const int TotalNumberOfGases = 10;
+=======
+        public const int TotalNumberOfGases = 12; 
+>>>>>>> 144551ba8f (add some /tg/ gases to goob)
 
         /// <summary>
         ///     This is the actual length of the gases arrays in mixtures.
@@ -280,6 +284,26 @@ namespace Content.Shared.Atmos
         ///     Divisor for Ammonia Oxygen reaction so that it doesn't happen instantaneously.
         /// </summary>
         public const float AmmoniaOxygenReactionRate = 10f;
+
+        /// <summary>
+        ///     The amount of energy 1 mole of BZ forming from N2O and plasma releases.
+        /// </summary>
+        public const float BZFormationEnergy = 80e3f; 
+
+        /// <summary>
+        ///     The amount of energy 1 mol of Healium forming from BZ and frezon releases.
+        /// </summary>
+        public const float HealiumProductionEnergy = 9e3f; 
+
+        /// <summary>
+        ///     The amount of energy 1 mol of Nitrium forming from Tritium, Nitrogen and BZ releases.
+        /// </summary>
+        public const float NitriumProductionEnergy = 100e3f; 
+
+        /// <summary>
+        ///     The amount of energy 1 mol of Nitrium decomposing into nitrogen and water vapor releases.
+        /// </summary>
+        public const float NitriumDecompositionEnergy = 30e3f; 
 
         /// <summary>
         ///     Determines at what pressure the ultra-high pressure red icon is displayed.
@@ -367,6 +391,12 @@ namespace Content.Shared.Atmos
         Ammonia = 6,
         NitrousOxide = 7,
         Frezon = 8,
+<<<<<<< HEAD
         InfectionDeadSpace = 9
+=======
+        BZ = 9, 
+        Healium = 10, 
+        Nitrium = 11, 
+>>>>>>> 144551ba8f (add some /tg/ gases to goob)
     }
 }
