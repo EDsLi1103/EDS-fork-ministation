@@ -30,13 +30,9 @@ namespace Content.Server.Atmos.Portable
             Gas.Ammonia,
             Gas.NitrousOxide,
             Gas.Frezon,
-<<<<<<< HEAD
-            Gas.InfectionDeadSpace
-=======
             Gas.BZ,
             Gas.Healium,
             Gas.Nitrium,
->>>>>>> 144551ba8f (add some /tg/ gases to goob)
         };
 
         [ViewVariables(VVAccess.ReadWrite)]

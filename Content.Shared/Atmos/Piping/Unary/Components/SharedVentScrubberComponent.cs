@@ -23,13 +23,9 @@ namespace Content.Shared.Atmos.Piping.Unary.Components
             Gas.Ammonia,
             Gas.NitrousOxide,
             Gas.Frezon,
-<<<<<<< HEAD
-            Gas.InfectionDeadSpace // DS14
-=======
             Gas.BZ, 
             Gas.Healium, 
             Gas.Nitrium 
->>>>>>> 144551ba8f (add some /tg/ gases to goob)
         };
 
         // Presets for 'dumb' air alarm modes

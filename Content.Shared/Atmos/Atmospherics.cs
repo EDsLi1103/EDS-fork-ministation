@@ -203,11 +203,7 @@ namespace Content.Shared.Atmos
         /// <summary>
         ///     Total number of gases. Increase this if you want to add more!
         /// </summary>
-<<<<<<< HEAD
-        public const int TotalNumberOfGases = 10;
-=======
         public const int TotalNumberOfGases = 12; 
->>>>>>> 144551ba8f (add some /tg/ gases to goob)
 
         /// <summary>
         ///     This is the actual length of the gases arrays in mixtures.
@@ -391,12 +387,8 @@ namespace Content.Shared.Atmos
         Ammonia = 6,
         NitrousOxide = 7,
         Frezon = 8,
-<<<<<<< HEAD
-        InfectionDeadSpace = 9
-=======
         BZ = 9, 
         Healium = 10, 
         Nitrium = 11, 
->>>>>>> 144551ba8f (add some /tg/ gases to goob)
     }
 }
